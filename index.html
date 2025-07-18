@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div id="main-window">
+        <div id="title-bar">
+            <div id="window-icon-and-title">
+                <img src="img/CalcXP.ico">
+                - Калькулятор
+            </div>
+            <div id="window-control-buttons">
+                <!--<input type="button" class="win-btn minimize">
+                <input type="button" class="win-btn maximize">
+                <input type="button" class="win-btn close">-->
+                <button class="win-btn minimize"></button>
+                <button class="win-btn maximize"></button>
+                <button class="win-btn close"></button>
+            </div>
+        </div>
+        <div id="client-rect">
+            <div id="menu-bar">
+                <span>Edit</span>
+                <span>View</span>
+                <span>Help</span>
+            </div>
+            <div id="display">0</div>
+            <div id="buttons">
+                <div class="row">
+                    <button class="btn pressed"></button>
+                    <button class="btn func">Backspace</button>
+                    <button class="btn func">CE</button>
+                    <button class="btn func">C</button>
+                </div>
+                <div class="row">
+                    <button class="btn mem">MC</button>
+                    <button class="btn num">7</button>
+                    <button class="btn num">8</button>
+                    <button class="btn num">9</button>
+                    <button class="btn op">/</button>
+                    <button class="btn nonStdOp">sqrt</button>
+                </div>
+                <div class="row">
+                    <button class="btn mem">MR</button>
+                    <button class="btn num">4</button>
+                    <button class="btn num">5</button>
+                    <button class="btn num">6</button>
+                    <button class="btn op">*</button>
+                    <button class="btn nonStdOp">%</button>
+                </div>
+                <div class="row">
+                    <button class="btn mem">MS</button>
+                    <button class="btn num">1</button>
+                    <button class="btn num">2</button>
+                    <button class="btn num">3</button>
+                    <button class="btn op">-</button>
+                    <button class="btn nonStdOp">1/x</button>
+                </div>
+                <div class="row">
+                    <button class="btn mem">M+</button>
+                    <button class="btn num">0</button>
+                    <button class="btn num">+/-</button>
+                    <button class="btn num">.</button>
+                    <button class="btn op">+</button>
+                    <button class="btn op">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const display = document.querySelector('#display');
+    display.textContent = '0.'; // Устанавливаем начальное значение
+
+    // Дополнительно: обработчик для очистки при нажатии C
+    document.querySelector('.btn.func').addEventListener('click', function() {
+        if(this.textContent === 'C') {
+            display.textContent = '0.';
+        }
+    });
+});
+    </script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="calculator">
+        <div class="title-bar">
+            <span>Calculator</span>
+            <div class="window-controls">
+                <button>-</button>
+                <button class="maximize">[]</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <span>Edit</span>
+            <span>View</span>
+            <span>Help</span>
+        </div>
+        <input type="text" class="display" value="0." readonly />
+
+        <div class="buttons">
+            <button class="wide">Backspace</button>
+            <button>CE</button>
+            <button>C</button>
+
+            <button>MC</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>sqrt</button>
+
+            <button>MR</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            <button>%</button>
+
+            <button>MS</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>1/x</button>
+
+            <button>M+</button>
+            <button>0</button>
+            <button>+/-</button>
+            <button>.</button>
+            <button>+</button>
+            <button>=</button>
+        </div>
+    </div>
+</body>
+</html>-->
