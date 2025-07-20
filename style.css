@@ -102,7 +102,7 @@
         width: 406px;
         height: 354px;
         background-color: #2d28c1;
-        box-shadow: inset 1px -2px 2px 0.5px #156cf7, inset -2px 2px 2px 1px #3142b7;
+        box-shadow: inset 1px -2px 2px 0.5px #156cf7, inset -2px 2px 2px 1px #3142b7, inset -1px 3px 3px 5px #2d28c1;
         /*border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;*/
         z-index: -1;
@@ -156,7 +156,7 @@
     height: 35px;
     background-color: white;
     border: 1px solid #8399ad;
-    margin: 0 4px 14px 4px;
+    margin: 0 4px 12px 4px;
     /*margin-right: 4px;
     margin-left: 4px;
     margin-bottom: 14px;*/
