@@ -80,9 +80,9 @@
 
 #client-rect {
     position: absolute;
-    top: 34px;
+    top: 36px;
     width: 400px;
-    height: 356px;
+    height: 354px;
     background-color: rgb(235, 233, 216);
     /*border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;*/
